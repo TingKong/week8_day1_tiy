@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery!</title>
+</head>
+<body>
+	<a href="http://google.com">Google All the Things!</a>
+</body>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script type ="text/javascript">
+	// window.onload = function(){
+	// 	alert("Hello");
+	// }
+$(document).ready(function(){
+	$("a").click(function(event){
+		alert("you clicked me");
+		$("a").addClass("test");
+		event.preventDefault();
+	});
+});
+
+</script>
+</html>
